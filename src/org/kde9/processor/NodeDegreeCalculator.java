@@ -10,7 +10,7 @@ public class NodeDegreeCalculator {
 	private Graph partialGraph;
 
 	public NodeDegreeCalculator(Graph graph, Graph tree) {
-		System.err.println("calculate the original degree of nodes in tree ... ");
+//		System.err.println("calculate the original degree of nodes in tree ... ");
 		long start = System.currentTimeMillis();
 		this.partialGraph = new Graph();
 		Set<Node> nodes = tree.getAllNodes();
@@ -26,9 +26,9 @@ public class NodeDegreeCalculator {
 		}
 		this.partialGraph.calculateNodeWeight();
 		long end = System.currentTimeMillis();
-		System.err.println(" finish. nodes num " + partialGraph.getNodeNum()
-				+ ", edges num " + partialGraph.getEdgeNum());
-		System.err.println((end - start) / 1000.0 + "s");
+//		System.err.println(" finish. nodes num " + partialGraph.getNodeNum()
+//				+ ", edges num " + partialGraph.getEdgeNum());
+//		System.err.println((end - start) / 1000.0 + "s");
 	}
 	
 	public int getDegree(Node node) {
